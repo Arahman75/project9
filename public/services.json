@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "bangladesh",
+        "price": 1233,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8irskTMS-k9nh0gdB_rWeHQMUhq8KwCZNxw&usqp=CAU",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
+    },
+    {
+        "id": 2,
+        "name": "bangladesh",
+        "price": 1233,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8irskTMS-k9nh0gdB_rWeHQMUhq8KwCZNxw&usqp=CAU",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
+    },
+    {
+        "id": 3,
+        "name": "bangladesh",
+        "price": 1233,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8irskTMS-k9nh0gdB_rWeHQMUhq8KwCZNxw&usqp=CAU",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
+    },
+    {
+        "id": 4,
+        "name": "bangladesh",
+        "price": 1233,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8irskTMS-k9nh0gdB_rWeHQMUhq8KwCZNxw&usqp=CAU",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
+    },
+    {
+        "id": 5,
+        "name": "bangladesh",
+        "price": 1233,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8irskTMS-k9nh0gdB_rWeHQMUhq8KwCZNxw&usqp=CAU",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
+    },
+    {
+        "id": 6,
+        "name": "bangladesh",
+        "price": 1233,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8irskTMS-k9nh0gdB_rWeHQMUhq8KwCZNxw&usqp=CAU",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
+    }
+]
