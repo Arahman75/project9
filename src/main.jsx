@@ -11,6 +11,8 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
+import About from './pages/About/About';
+import AuthProvider from './provider/AuthProvider';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
         element: <Register></Register>
       },
       {
+        path: '/about',
+        element: <About></About>
+      },
+      {
         path: '/service/:id',
         element: <ServiceDetails></ServiceDetails>,
         loader: () => fetch('/weddingData.json')
@@ -43,6 +49,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

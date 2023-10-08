@@ -1,41 +1,41 @@
 [
     {
-        "id": "1",
+        "_id": 1,
         "service_name": "Engagement",
         "image": "https://i.ibb.co/0yyt9zG/engagement.jpg",
         "price": "$2,500",
         "description": "Transform your wedding venue with our elegant decoration services."
     },
     {
-        "id": "2",
+        "_id": 2,
         "service_name": "Club Decoration",
         "image": "https://i.ibb.co/qmph31b/club.jpg",
         "price": "$1,200",
         "description": "Enjoy a sumptuous dining experience with our deluxe catering package."
     },
     {
-        "id": "3",
+        "_id": 3,
         "service_name": "Stage Decoration",
         "image": "https://i.ibb.co/nw2XG8V/stage.jpg",
         "price": "$800",
         "description": "Add musical charm to your event with a live band performance."
     },
     {
-        "id": "4",
+        "_id": 4,
         "service_name": "Bridal Makeup",
         "image": "https://i.ibb.co/n6QGtMf/bridalmakeup.jpg",
         "price": "$1,500",
         "description": "Capture every moment of your special day with our photography and videography services."
     },
     {
-        "id": "5",
+        "_id": 5,
         "service_name": "Photography",
         "image": "https://i.ibb.co/dcdHCmt/photography.webp",
         "price": "$600",
         "description": "Create personalized wedding invitations that match your style."
     },
     {
-        "id": "6",
+        "_id": 6,
         "service_name": "Car Decoration",
         "image": "https://i.ibb.co/gj6QNZb/car.jpg",
         "price": "$900",
