@@ -10,6 +10,7 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/service/:id',
+        element: <ServiceDetails></ServiceDetails>,
+        loader: () => fetch('/weddingData.json')
       }
     ]
   },
