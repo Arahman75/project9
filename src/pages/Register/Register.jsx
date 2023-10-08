@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 
 const Register = () => {
-    const { createUser } = useContext(AuthContext)
+    const { createUser, loginWithGoogle } = useContext(AuthContext)
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -13,6 +13,11 @@ const Register = () => {
         const password = e.target.password.value;
         console.log(name, email, photo, password);
 
+        // validation
+        if (password > 6) {
+            alert('password at least 6 charachters')
+        }
+
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
@@ -20,7 +25,17 @@ const Register = () => {
             .catch(error => {
                 console.error(error)
             })
+    }
 
+    const handleGoogleLogin = () => {
+        loginWithGoogle()
+            .then(result => {
+                console.log(result.user);
+                alert('login successfully')
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
     return (
         <div className="hero min-h-screen ">
@@ -59,6 +74,9 @@ const Register = () => {
                         </div>
                         <div className="form-control mt-6">
                             <button type='submit' className="btn btn-secondary">Register</button>
+                        </div>
+                        <div>
+                            <button onClick={handleGoogleLogin} type='submit' className="btn btn-primary">Google</button>
                         </div>
                         <p className='text-center text-lg mt-4 '>Already have an account? Please <Link className='text-green-600 font-bold' to='/login'>Login</Link></p>
                     </form>

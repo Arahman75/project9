@@ -6,7 +6,7 @@ import OnlineService from '../../components/OnlineService/OnlineService';
 
 const Home = () => {
     const services = useLoaderData();
-    // console.log(services);
+
     return (
         <div>
             <Banner></Banner>

@@ -3,25 +3,37 @@ import { AuthContext } from '../../provider/AuthProvider';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
-    // const { createUser } = useContext(AuthContext)
+    const { loginUser, loginWithGoogle } = useContext(AuthContext)
 
     const handleLogin = (e) => {
         e.preventDefault();
-        const name = e.target.name.value;
         const email = e.target.email.value;
-        const photo = e.target.photo.value;
         const password = e.target.password.value;
-        console.log(name, email, photo, password);
+        console.log(email, password);
 
-        // createUser(email, password)
-        //     .then(result => {
-        //         console.log(result.user);
-        //     })
-        //     .catch(error => {
-        //         console.error(error)
-        //     })
 
+        loginUser(email, password)
+            .then(result => {
+                console.log(result.user);
+                alert('login successfully')
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
+
+    const handleGoogleLogin = () => {
+        loginWithGoogle()
+            .then(result => {
+                console.log(result.user);
+                alert('login successfully')
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }
+
+
     return (
         <div className="hero min-h-screen ">
             <div className="hero-content flex-col">
@@ -49,6 +61,9 @@ const Login = () => {
                         </div>
                         <div className="form-control mt-6">
                             <button type='submit' className="btn btn-secondary">Login</button>
+                        </div>
+                        <div>
+                            <button onClick={handleGoogleLogin} type='submit' className="btn btn-primary">Google</button>
                         </div>
                         <p className='text-center text-lg mt-4 '>Don not have an account? Please <Link className='text-green-600 font-bold' to='/register'>Register</Link></p>
                     </form>

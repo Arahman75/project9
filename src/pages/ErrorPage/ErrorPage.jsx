@@ -2,9 +2,8 @@ import React from 'react';
 
 const ErrorPage = () => {
     return (
-        <div>
-            <h1>Oops!</h1>
-            <p>Sorry, an unexpected error has occurred.</p>
+        <div className='flex justify-center items-center max-w-[500px] '>
+            <p className='text-7xl font-bold'>404</p>
         </div>
     );
 };
