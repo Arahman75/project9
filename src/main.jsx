@@ -14,6 +14,7 @@ import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import About from './pages/About/About';
 import AuthProvider from './provider/AuthProvider';
 import PrivateRoute from './provider/PrivateRoute';
+import Blog from './pages/Blog/Blog';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/about',
-        element: <About></About>
+        element: <PrivateRoute><About></About></PrivateRoute>
+      },
+      {
+        path: '/blog',
+        element: <PrivateRoute><Blog></Blog></PrivateRoute>
       },
       {
         path: '/service/:id',
