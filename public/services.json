@@ -1,44 +1,30 @@
 [
     {
         "id": 1,
-        "name": "bangladesh",
+        "name": "Entertainment on Mehndi night",
         "price": 1233,
-        "image": "https://i.ibb.co/0yyt9zG/engagement.jpg",
+        "image": "https://i.ibb.co/F4CFtWD/banner1.jpg",
         "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
     },
     {
         "id": 2,
-        "name": "bangladesh",
+        "name": "The groom is coming in the car",
         "price": 1233,
-        "image": "https://i.ibb.co/qmph31b/club.jpg",
+        "image": "https://i.ibb.co/mb8yKKs/car.jpg",
         "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
     },
     {
         "id": 3,
-        "name": "bangladesh",
+        "name": "Bride's seating arrangements on stage",
         "price": 1233,
-        "image": "https://i.ibb.co/nw2XG8V/stage.jpg",
+        "image": "https://i.ibb.co/FnzQ1gw/makeup.jpg",
         "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
     },
     {
         "id": 4,
-        "name": "bangladesh",
+        "name": "Engagement day",
         "price": 1233,
-        "image": "https://i.ibb.co/n6QGtMf/bridalmakeup.jpg",
-        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
-    },
-    {
-        "id": 5,
-        "name": "bangladesh",
-        "price": 1233,
-        "image": "https://i.ibb.co/dcdHCmt/photography.webp",
-        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
-    },
-    {
-        "id": 6,
-        "name": "bangladesh",
-        "price": 1233,
-        "image": "https://i.ibb.co/gj6QNZb/car.jpg",
+        "image": "https://i.ibb.co/j6cHHk4/engagement.jpg",
         "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos eum aliquid magni atque eveniet, architecto non rem quod delectus aspernatur, facilis, ut numquam hic vel. Veritatis iste possimus magnam?"
     }
 ]
