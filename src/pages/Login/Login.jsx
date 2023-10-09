@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
+
 
 const Login = () => {
     const { loginUser, loginWithGoogle } = useContext(AuthContext);
@@ -11,16 +13,26 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
+        // console.log(email, password);
+
+        // if (password !== password) {
+        //     toast.error("password dose not match.")
+        //     return
+        // }
+        // else if (email !== email) {
+        //     toast.error("email dose not match.")
+        //     return
+        // }
 
         loginUser(email, password)
             .then(result => {
-                console.log(result.user);
+                toast.success('User login successfully');
+
                 // navigate after login
                 navigate(location?.state ? location.state : "/")
             })
             .catch(error => {
-                console.error(error)
+                toast.error(error.message)
             })
 
     }
@@ -28,13 +40,12 @@ const Login = () => {
     const handleGoogleLogin = () => {
         loginWithGoogle()
             .then(result => {
-                console.log(result.user);
-                alert('login successfully')
+                toast.success('User login successfully');
                 // navigate after login
                 navigate(location?.state ? location.state : "/")
             })
             .catch(error => {
-                console.error(error)
+                toast.error(error.message)
             })
     }
 

@@ -11,7 +11,7 @@ const Banner = () => {
                 </div>
                 <div className='absolute top-36 left-1/4'>
                     <div className='text-white max-w-xl text-center'>
-                        <h2 className='text-4xl font-bold'>Our Company Name is Wedding Bliss Bangladesh</h2>
+                        <h2 className='text-4xl font-bold'>Wedding Bliss Bangladesh</h2>
                         <p className='text-xl mt-4'>Wedding Bliss Bangladesh is a leading event management company specializing in creating unforgettable wedding experiences. With years of experience and a dedicated team of professionals, we have successfully executed numerous weddings, making us a trusted name in the industry.</p>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ const Banner = () => {
                 </div>
                 <div className='absolute top-36 left-1/4'>
                     <div className='text-white max-w-xl text-center'>
-                        <h2 className='text-4xl font-bold'>Our Company Name is Wedding Bliss Bangladesh</h2>
+                        <h2 className='text-4xl font-bold'>Wedding Bliss Bangladesh</h2>
                         <p className='text-xl mt-4'>Wedding Bliss Bangladesh is a leading event management company specializing in creating unforgettable wedding experiences. With years of experience and a dedicated team of professionals, we have successfully executed numerous weddings, making us a trusted name in the industry.</p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const Banner = () => {
                 </div>
                 <div className='absolute top-36 left-1/4'>
                     <div className='text-white max-w-xl text-center'>
-                        <h2 className='text-4xl font-bold'>Our Company Name is Wedding Bliss Bangladesh</h2>
+                        <h2 className='text-4xl font-bold'>Wedding Bliss Bangladesh</h2>
                         <p className='text-xl mt-4'>Wedding Bliss Bangladesh is a leading event management company specializing in creating unforgettable wedding experiences. With years of experience and a dedicated team of professionals, we have successfully executed numerous weddings, making us a trusted name in the industry.</p>
                     </div>
                 </div>

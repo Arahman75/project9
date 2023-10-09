@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
+import toast from 'react-hot-toast';
 
 const Register = () => {
-    const { createUser, loginWithGoogle } = useContext(AuthContext)
+    const { createUser, loginWithGoogle, handleUpdateProfile } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -11,19 +13,28 @@ const Register = () => {
         const email = e.target.email.value;
         const photo = e.target.photo.value;
         const password = e.target.password.value;
-        console.log(name, email, photo, password);
+        // console.log(name, email, photo, password);
 
         // validation
-        if (password > 6) {
-            alert('password at least 6 charachters')
+        if (password.length < 6) {
+            toast.success("password should be at least 6 character.")
+            return;
+        }
+        else if (!/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+])/.test(password)) {
+            toast.success("password should has a uppercase and a special character.")
+            return;
         }
 
         createUser(email, password)
             .then(result => {
-                console.log(result.user);
+                handleUpdateProfile(name, photo)
+                    .then(result => {
+                        toast.success('User create successfully');
+                        navigate('/')
+                    })
             })
             .catch(error => {
-                console.error(error)
+                toast.error(error.message)
             })
     }
 
@@ -31,10 +42,11 @@ const Register = () => {
         loginWithGoogle()
             .then(result => {
                 console.log(result.user);
-                alert('login successfully')
+                toast.success('User login successfully');
+                navigate('/')
             })
             .catch(error => {
-                console.error(error)
+                toast.error(error.message)
             })
     }
     return (
