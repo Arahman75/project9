@@ -14,6 +14,7 @@ const Card = ({ service }) => {
                     <button className="btn text-white font-semibold bg-red-500">Confirm Now</button>
                 </div>
             </div>
+
         </div>
     );
 };

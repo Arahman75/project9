@@ -10,7 +10,7 @@ const OtherSection = () => {
             .then(res => res.json())
             .then(data => setExtraCard(data))
     }, [])
-    // const { name, image, price, description } = service;
+
     return (
         <div className='mt-24'>
             <h2 className='text-5xl font-bold text-center mb-6'>Others Services</h2>
